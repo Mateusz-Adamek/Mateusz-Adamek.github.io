@@ -9,38 +9,40 @@
 </head>
 
 <body>
-    <form action="form.php" method="POST">
-        <label for="">Imię: </label>
-        <input type="text" name="name" id="">
+    <form action="https://formspree.io/mateusz.4damek@gmail.com" method="POST">
+        <label for="name-input">Imię: </label>
+        <input type="text" name="name" id=""> <br>
 
-        <label for="">Nazwisko: </label>
-        <input type="text" name="surname" id="">
+        <label for="surname-input">Nazwisko: </label>
+        <input type="text" name="surname" id=""> <br>
 
-        <label for="">Adres e-mail: </label>
-        <input type="email" name="mail" id="">
+        <label for="e-mail-input">Adres e-mail: </label>
+        <input type="email" name="e-mail" id=""> <br>
 
-        <label for="">Numer telefonu: </label>
-        <input type="number" name="" id="">
+        <label for="telephone-number">Numer telefonu: </label>
+        <input type="number" name="telephone-number" id=""> <br>
 
-        <label for="">Miasto: </label>
+        <label for="city-list">Miasto: </label>
         <select name="Miasto" id="">
-        <option value="Kraków">Kraków</option>
-        <option value="Warszawa">Warszawa</option>
-        <option value="Gdańsk">Gdańsk</option>
-        </select>
-        
-        <label for="">Płeć: </label>
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select> <br>
+
+        <label for="gender-radio">Płeć: </label>
         <input type="radio" name="gender" id=""> Mężczyzna
         <input type="radio" name="gender" id=""> Kobieta
         <input type="radio" name="gender" id=""> Gender (Inne: np. Bojowy helikopter)
-
-        <label for="">Zgoda na przetwarzanie danych: </label>
-        <input type="checkbox" name="agreement" id="">
-
-        <label for="">Treść wiadomości: </label>
-        <textarea name="message" id="" cols="30" rows="10"></textarea>
-
-        <label for=""></label>
+        <br>
+        <label for="agreement-checkbox">Zgoda na przetwarzanie danych osobowych: </label>
+        <input type="checkbox" name="agreement" id="" required>
+        <br>
+        <br>
+        <label for="text-field">Treść wiadomości: </label> <br>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Twoja wiadomość..."></textarea>
+        <br>
+        <br>
+        <label for="submit-button"></label>
         <input type="submit" value="Wyślij">
     </form>
 </body>
