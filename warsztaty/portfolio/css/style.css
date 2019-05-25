@@ -1,0 +1,16 @@
+header {
+    background-image: url(../img/header.jpg);
+    background-position: top center;
+    
+}
+
+h2, .buttons {
+color: #333;
+
+}
+
+.buttons {
+    background-color: white;
+    border: 1px solid #007bff;
+    font-family: 'Open Sans', sans-serif;
+}
