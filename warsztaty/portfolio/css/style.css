@@ -5,7 +5,7 @@
 }
 
 a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
     /* powyższe komendy usuwają domyslne formatowanie linków */
 }
@@ -19,13 +19,15 @@ a {
 
 
 h1,
-.kropka{
+.kropka {
     color: #007bff;
 
 }
 
 h1 {
     font-size: 48px;
+    margin-bottom: 1px;
+   
 }
 
 h2,
@@ -33,14 +35,18 @@ h3,
 .buttons,
 p {
     color: #333;
-
+   
+   
 }
 
 
 
-hr {
-    width: 100px;
-    color: #007bff;
+.line {
+    width: 5%;
+    height: 1px;
+    background-color: #007bff;
+    border: 0px;
+    margin-bottom: 2%;
 }
 
 .buttons {
@@ -72,7 +78,7 @@ header#header div#natle {
     /* pozycjonowanie tła nagłówka*/
     background-image: url(../img/header.jpg);
     background-position: center center;
-
+    position: relative;
 }
 
 
@@ -88,7 +94,7 @@ header#header div#natle {
     padding-inline-start: 35%;
     padding-inline-end: 35%;
     background-color: #007bff;
-
+    position: relative;
 
 }
 
@@ -100,12 +106,12 @@ header#header div#natle {
 /* O MNIE - START */
 
 #about-me {
-    height: 130vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 
 }
 
@@ -115,7 +121,7 @@ header#header div#natle {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-
+    position: relative;
 
 }
 
@@ -138,6 +144,7 @@ section#about-me div#about-me div#buzia {
 /* PORTFOLIO - START */
 section#portfolio {
     background-color: #f2f1ed;
+    position: relative;
 }
 
 
@@ -147,6 +154,7 @@ section#portfolio div#portfolio {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 
 }
@@ -154,7 +162,7 @@ section#portfolio div#portfolio {
 section#portfolio div#portfolio img {
     height: 30vh;
     width: 50vh;
-
+    position: relative;
 
 
 }
