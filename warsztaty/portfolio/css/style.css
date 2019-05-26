@@ -1,10 +1,10 @@
 /* GENERAL STYLES - START */
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;  
+    font-family: 'Open Sans', sans-serif;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     /* powyższe komendy usuwają domyslne formatowanie linków */
@@ -12,33 +12,35 @@ a{
 
 
 
-header {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(../img/header.jpg);
-    background-position: center center;
-    /* pozycjonowanie tła nagłówka powyżej */
-    align-items: center;
-}
 
 
 
-hr{
-    width: 100px;
-   
-}
-h1, .kropka, hr {
+
+
+
+h1,
+.kropka{
     color: #007bff;
-    
+
+}
+
+h1 {
+    font-size: 48px;
 }
 
 h2,
 h3,
-.buttons, p {
+.buttons,
+p {
     color: #333;
 
+}
+
+
+
+hr {
+    width: 100px;
+    color: #007bff;
 }
 
 .buttons {
@@ -60,8 +62,18 @@ h3,
 
 
 /* header - START */
+header#header div#natle {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    /* pozycjonowanie tła nagłówka*/
+    background-image: url(../img/header.jpg);
+    background-position: center center;
 
+}
 
 
 
@@ -85,11 +97,66 @@ h3,
 
 
 
-/* SECTION - START */
+/* O MNIE - START */
+
+#about-me {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#article-about {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+
+}
+
+section#about-me div#about-me div#buzia {
+    /* background-color: black; */
+    background-image: url(../img/ja.png);
+    background-position: left center;
+    background-size: 110%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+
+/* O MNIE - END */
 
 
 
 
+/* PORTFOLIO - START */
+section#portfolio {
+    background-color: #f2f1ed;
+}
 
 
-/* SECTION - END */
+section#portfolio div#portfolio {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+section#portfolio div#portfolio img {
+    height: 30vh;
+    width: 50vh;
+
+
+
+}
+
+/* PORTFOLIO - END */
