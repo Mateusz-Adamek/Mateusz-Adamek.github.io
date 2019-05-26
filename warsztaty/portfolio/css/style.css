@@ -151,23 +151,92 @@ section#portfolio {
 
 
 section#portfolio div#portfolio {
-    height: 120vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 3%;
 
 
 }
+div#obrazki {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    padding-bottom: 5%;
+   
 
+}
 section#portfolio div#portfolio img {
-    height: 30vh;
-    width: 50vh;
+    height: 25vh;
+    width: 40vh;
     position: relative;
-
+    
+   
 
 }
+
+section#portfolio div#portfolio a {
+    
+margin: 0;
+padding:0;
+    
+   
+
+}
+
+/* #obrazki {
+ 
+}
+
+div#img1 {
+    background-image: url(../img/portfolio/photo-1.jpg);
+    height: 20px;
+    width: 30px;
+    background-position: left center;
+}
+#img2 {
+    background-image: url(../img/portfolio/photo-2.jpg);
+}
+#img3 {
+    background-image: url(../img/portfolio/photo-3.jpg);
+}
+#img4 {
+    background-image: url(../img/portfolio/photo-4.jpg);
+}
+#img5 {
+    background-image: url(../img/portfolio/photo-5.jpg);
+}
+#img6 {
+    background-image: url(../img/portfolio/photo-6.jpg);
+}
+#img7 {
+    background-image: url(../img/portfolio/photo-7.jpg);
+}
+#img8 {
+    background-image: url(../img/portfolio/photo-8.jpg);
+}
+#img9 {
+    background-image: url(../img/portfolio/photo-9.jpg);
+}
+#img10 {
+    background-image: url(../img/portfolio/photo-10.jpg);
+}
+#img11 {
+    background-image: url(../img/portfolio/photo-11.jpg);
+}
+#img12 {
+    background-image: url(../img/portfolio/photo-12.jpg);
+} */
+
+
+
 
 /* PORTFOLIO - END */
 
@@ -235,3 +304,19 @@ padding: 2%;
 }
 
 /* contact - END */
+
+
+
+
+#footer {
+    background-color: #f2f1ed;
+    height:100%;
+    width: 100%;
+    position: relative;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+
+
+}
