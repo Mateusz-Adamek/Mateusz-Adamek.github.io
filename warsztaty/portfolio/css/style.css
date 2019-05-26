@@ -1,16 +1,95 @@
+/* GENERAL STYLES - START */
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    /* powyższe komendy usuwają domyslne formatowanie linków */
+}
+
+
+
 header {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url(../img/header.jpg);
-    background-position: top center;
+    background-position: center center;
+    /* pozycjonowanie tła nagłówka powyżej */
+    align-items: center;
+}
+
+
+
+hr{
+    width: 100px;
+   
+}
+h1, .kropka, hr {
+    color: #007bff;
     
 }
 
-h2, .buttons {
-color: #333;
+h2,
+h3,
+.buttons, p {
+    color: #333;
 
 }
 
 .buttons {
-    background-color: white;
+
     border: 1px solid #007bff;
-    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0);
+    /* Przezroczystość tła - to ostatnie 0 */
+
 }
+
+/* GERERAL STYLES - END */
+
+
+
+
+
+
+
+
+/* header - START */
+
+
+
+
+
+/* header - END */
+
+/* nav - START */
+#navigation-main div.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    padding-inline-start: 35%;
+    padding-inline-end: 35%;
+    background-color: #007bff;
+
+
+}
+
+
+/* nav - END */
+
+
+
+/* SECTION - START */
+
+
+
+
+
+
+/* SECTION - END */
