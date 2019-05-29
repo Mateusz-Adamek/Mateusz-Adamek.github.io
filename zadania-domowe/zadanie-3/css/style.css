@@ -1,0 +1,110 @@
+.outer {
+ width: 600px;
+ height: 600px;
+    background-color: grey;
+   position: relative;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    
+    position: absolute;
+    border: solid 3px white;
+
+}
+
+.round {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 100px 
+ 
+
+}
+
+div#one {
+background-color:red;
+
+}
+#kone{
+    background-color: pink;
+}
+
+div#two {
+background-color: blue;
+left: 200px;
+
+}
+#ktwo {
+    background-color: grey;
+}
+
+div#three {
+background-color: green;
+left: 400px;
+}
+#kthree {
+    background-color: purple;
+}
+
+div#four {
+background-color: yellow;
+top: 200px;
+}
+#kfour {
+    background-color: green;
+}
+
+div#five {
+background-color: black;
+left: 200px;
+top: 200px; 
+
+
+  
+}
+#kfive {
+    background-color: red;
+}
+
+div#six {
+background-color: orange;
+left: 400px;
+top: 200px;            
+}
+
+#ksix {
+    background-color: blue;
+}
+
+div#seven {
+background-color: purple;
+top: 400px;                
+}
+#kseven {
+    background-color: orange;
+}
+
+div#eight {
+background-color: grey;
+left: 200px;
+top: 400px;                    
+}
+
+#keight {
+    background-color: yellow;
+}
+
+div#nine {
+background-color: pink;
+left: 400px;
+top: 400px;  
+}
+
+#knine {
+    background-color:black;
+}
