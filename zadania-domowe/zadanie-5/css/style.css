@@ -2,9 +2,11 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, sans-serif;
     padding: 0px;
-margin: 0px;
+    margin: 0px;
     background-position: center center;
-    font-size: 34px;
+
+    background-repeat: no-repeat;
+
 }
 
 body {
@@ -19,7 +21,7 @@ body {
 header {
     height: 50%;
     width: 100%;
-    border: 10px solid orange;
+    background-size: contain;
     background-image: url(../img/man-1.jpg);
     position: relative;
 
@@ -34,54 +36,63 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: black
-}
-
-@media (min-width: 992px)
-{
-header {
-    height: 70%;
-    width: 100%;
-    display: flex;
- 
-    justify-content: flex-end;
-    align-items: flex-start;
-    background-image: url(../img/man-2.jpg);
-    position: absolute;
-}
-.small {
-    position: absolute;
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: flex-end;
-  padding-top: 5%;
-  padding-right: 5%;
-    color: white;
+    color: black;
 
 }
 
+@media (min-width: 992px) {
+    header {
+        height: 70%;
+        width: 100%;
+        background-image: url(../img/man-2.jpg);
+        position: absolute;
+        background-size: 100%;
+    }
+
+    .small {
+        position: absolute;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-end;
+        padding-top: 5%;
+        padding-right: 5%;
+        color: white;
+
+    }
+
+    h2 {
+        padding-right: 25vh;
+    }
 }
 
 
 
-/* 
-@media (min-width: 1170px)
-{ 
-   header {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-image: url(../img/man-1.jpg);
-    height: 100%;
-    position: absolute;
-   }
+
+@media (min-width: 1170px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(../img/man-1.jpg);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .small {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 3%;
+
+    }
 
 
 
-} */
+}
 
 /* Twoim zadaniem będzie wykonanie nagłówka do strony internetowej dla trzech rozdzielczości:
 - Więcej niż 1170px
