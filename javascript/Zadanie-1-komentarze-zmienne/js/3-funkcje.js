@@ -67,3 +67,19 @@ const multiply = (num1, num2) => {
     const result = num1 * num2;
     return result;
 }
+
+let multiplyResult = multiply(2, 5);
+console.log(multiplyResult);
+
+//poniżej odpowiednik tego co wyżej, ale skrótowo
+
+const multiplyShort = (num1, num2) => num1 * num2;
+/*
+odpowiednik zapisu 
+const multiplyShort = (num1, num2) => {
+    return = num1 * num2;
+}
+*/
+
+let resultShort = multiplyShort(2, 3);
+console.log(resultShort);
