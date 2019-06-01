@@ -50,3 +50,8 @@ console.log(zbiorPanstw);
 //łączenie tablic w ES5 - bonus, to też tworzy kopię, oryginały zostają
 let zbiorPanstwSpread = [...panstwaAfryki, ...panstwa];
 console.log(zbiorPanstwSpread);
+
+//usuwanie elementów ze środka tablicy
+panstwaAfryki.splice(2, 0, 'Sudan', 'Zanzibar'); //dwa pierwsze usuwają, a potem mozemy dowolna ilośc elemntów wstawić na ich miejsce
+console.log(panstwaAfryki);
+
