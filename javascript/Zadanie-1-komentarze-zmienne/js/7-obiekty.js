@@ -38,7 +38,7 @@ class Ogloszenie {
             Tytuł: ${this.tytul} <br>
             Treść: ${this.tresc}<br>
             Cena: ${this.cena}<br>
-            Lokalizacja: ${this.lokalizacja}
+            Lokalizacja: ${this.lokalizacja} <br><br>
             `)
     }
 }
@@ -51,3 +51,14 @@ const ogloszenie1 = new Ogloszenie(  //new tworzy nowy obiekt, na bazie podanej 
     'Warszawa'
 )
 ogloszenie1.wyswietl();
+
+const ogloszenie2 = new Ogloszenie (
+000122346,
+'Działeczka pod Warszawą',
+'Taniutka, dużo zielenie wokół, 0 bezdomnych',
+500,
+'Kąck'
+
+)
+
+ogloszenie2.wyswietl();
