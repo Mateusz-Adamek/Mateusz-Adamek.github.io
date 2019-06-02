@@ -1,4 +1,10 @@
 const form = document.getElementById('formularz');
+const inputText1 = document.getElementById('input1');
+const inputText2 = document.getElementById('input2');
+
+ //opcja alternatywna oszczędzająca !!!
+// const inputs = document.getElementsByTagName('input');
+
 
 const submitClickCallback = (e) => {
 
@@ -6,18 +12,26 @@ const submitClickCallback = (e) => {
     // e.stopPropagation();
     // alert('Wysłałeś formularz');
 
-    const inputText1 = document.getElementById('input1');
-    const inputText2 = document.getElementById('input2');
     
-    const text1 = input1.value;
-    const text2 = input2.value;
+    
+    const text1 = inputText1.value;
+    const text2 = inputText2.value;
     
     console.log(text1);
     console.log(text2);
+    
+    //opcja alternatywna oszczędzająca!!!
+    // [...inputs].forEach((el) => {
+    //     if(el.type != 'submit') {
+    //         console.log(el.value);
+    //     }
+    // })
+
 
 }
 
 form.addEventListener('click', submitClickCallback);
+
 
 
 
