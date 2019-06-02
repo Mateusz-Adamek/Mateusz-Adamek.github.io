@@ -1,10 +1,10 @@
-const sub = document.getElementById('submit');
+const form = document.getElementById('formularz');
 
 const submitClickCallback = (e) => {
 
     e.preventDefault();
-    e.stopPropagation();
-    alert('Wysłałeś formularz');
+    // e.stopPropagation();
+    // alert('Wysłałeś formularz');
 
     const inputText1 = document.getElementById('input1');
     const inputText2 = document.getElementById('input2');
@@ -17,7 +17,7 @@ const submitClickCallback = (e) => {
 
 }
 
-sub.addEventListener('click', submitClickCallback);
+form.addEventListener('click', submitClickCallback);
 
 
 
