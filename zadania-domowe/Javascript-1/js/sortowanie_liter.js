@@ -1,6 +1,8 @@
 
  let tekst = document.getElementById('odwracany').innerText;
-// function sortString(){
+
+// Rozwiązanie 1
+ // function sortString(){
 //     let arr = tekst.split('');
  
 //     let tmp;
@@ -19,7 +21,7 @@
 //   }
 
 
-
+// Rozwiązanie 2
   function sortString(){
     let arr = tekst.split('');
     let sorted = arr.sort();
