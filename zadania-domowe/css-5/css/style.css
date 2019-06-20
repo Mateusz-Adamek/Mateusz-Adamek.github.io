@@ -1,86 +1,93 @@
 
 *{
-    margin: 0;
-    padding: 0;
- text-align: center;
+    /* margin: 0; */
+    /* padding: 0; */
+
 }
 body{
     color: white;
     font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
 }
 .wrapper {
-    flex-flow: row wrap;
+flex-flow: row wrap;
+    display: flex;
+    text-align: center;
+
+  
 }
 
 /* We tell all items to be 100% width, via flex-basis */
 .wrapper > * {
+ 
+
     flex: 1 100%;
   }
   
 #head{
 background-color: red;
 
-height: 5vh;
+
 }
 
 #pierwsza{
 background-color: aqua;
 
-height: 30vh;
 }
 
 #druga {
     background-color: green;
    
-    height: 30vh;
+
 }
 
 #trzecia {
 background-color: pink;
 
-height: 30vh;
+
 }
 
 #foot {
     background-color: purple;
  
-    height: 5vh;
+ 
 }
 
-.sekcja, .headfoot {
+/* .sekcja, .headfoot {
     display: flex;
     flex-direction: column;
    align-items: center;
 
-}
+} */
 
-.headfoot {
+/* .headfoot {
    
    justify-content: center;
    
 
-}
+} */
 
 
 /* Medium screens 768 - 992*/
 @media all and (min-width: 768px) {
   /* We tell both sidebars to share a row */
-  .aside { flex: 1 auto; }
-}
+ 
+  #trzecia {flex: 1 0 0;}
+  #pierwsza { flex: 3 0px; }
+   #druga   { order: 3; } 
+   #pierwsza { order: 1; }
+   #trzecia { order: 2; }
+  #foot { order:4;}
 
 /* Large screens >992 */
 @media all and (min-width: 992px) {
   /* We invert order of first sidebar and main
    * And tell the main element to take twice as much width as the other two sidebars 
    */
-  .main { flex: 2 0px; }
-  .aside-1 { order: 1; }
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
-  .footer  { order: 4; }
+   #druga {flex: 1 0 0;}
+   #pierwsza { flex: 3 0px; }
+   #druga   { order: 1; } 
+   #pierwsza { order: 2; }
+   #trzecia { order: 3; }
+  #foot { order:4;}
 }
