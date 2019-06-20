@@ -16,17 +16,22 @@ jQuery(document).ready(function () {
         tablica.unshift(tablica[4]); //dodaje nowe elementy i zwraca długość tablicy
         tablica.pop(tablica[5]); // usuwa ostatni element i zwraca jego wartość
         console.log(tablica);
-        // $('.formGr').append().html("<p>" + paragrafObj1 + "</p>");
-
-        // document.body.appendChild( btn ); // dodaj element do elementu <body>
-        // let btn = document.createElement( "button" ); // tworzy element <button>
-
-        
+   
+        $('#par5').text(tablica[4]);
+        $('#par4').text(tablica[3]);
+        $('#par3').text(tablica[2]);
+        $('#par2').text(tablica[1]);
+        $('#par1').text(tablica[0]);
     });
     $('#backBtn').click(function () {
         tablica.push(tablica[0]); //dodaje nowe elementy na końcu i zwraca długość tablicy
         tablica.shift(tablica[0]); // usuwa pierwszy element i zwraca jego wartość
         console.log(tablica);
+        $('#par5').text(tablica[4]);
+        $('#par4').text(tablica[3]);
+        $('#par3').text(tablica[2]);
+        $('#par2').text(tablica[1]);
+        $('#par1').text(tablica[0]);
     });
 });
 
