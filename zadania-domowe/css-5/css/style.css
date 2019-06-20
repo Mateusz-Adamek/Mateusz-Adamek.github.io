@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+ text-align: center;
+}
+body{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrapper {
+    flex-flow: row wrap;
+}
+
+/* We tell all items to be 100% width, via flex-basis */
+.wrapper > * {
+    flex: 1 100%;
+  }
+  
+#head{
+background-color: red;
+
+height: 5vh;
+}
+
+#pierwsza{
+background-color: aqua;
+
+height: 30vh;
+}
+
+#druga {
+    background-color: green;
+   
+    height: 30vh;
+}
+
+#trzecia {
+background-color: pink;
+
+height: 30vh;
+}
+
+#foot {
+    background-color: purple;
+ 
+    height: 5vh;
+}
+
+.sekcja, .headfoot {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+}
+
+.headfoot {
+   
+   justify-content: center;
+   
+
+}
+
+
+/* Medium screens 768 - 992*/
+@media all and (min-width: 768px) {
+  /* We tell both sidebars to share a row */
+  .aside { flex: 1 auto; }
+}
+
+/* Large screens >992 */
+@media all and (min-width: 992px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .main { flex: 2 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
