@@ -20,23 +20,29 @@ class Ksiazka {
 
 // Tworzymy 3 instancje książek
 let prawoDoZemsty = new Ksiazka("Prawo do zemsty", "Denis Szabałow", false);
-prawoDoZemsty.opiszKsiazke();
+// prawoDoZemsty.opiszKsiazke(); - wyłączamy wywoływanie w tym miejscu
 
 let wCieniuMistrza = new Ksiazka("W cieniu mistrza", "Edgar Allan Poe", true);
-wCieniuMistrza.opiszKsiazke();
+// wCieniuMistrza.opiszKsiazke(); - wyłączamy wywoływanie w tym miejscu
 
 let krolestwo = new Ksiazka("Królestwo", "Szczepan Twardoch", false);
-krolestwo.opiszKsiazke();
+// krolestwo.opiszKsiazke(); - wyłączamy wywoływanie w tym miejscu
 
+// Stworzenie tablicy globalnej
+let tablicaGlobalna = [prawoDoZemsty, wCieniuMistrza, krolestwo];
+// I zmiennej n, która bedzie otrzyywałą wartość = ilość przeczytanych ksiązek
+let n = 0; 
 
-let tablicaGlobalna = []
-
-
-//Przejście po elementach w celu sprawdzenia, któe zostały przeczytane
+//Przejście po elementach w celu sprawdzenia, które zostały przeczytane
 tablicaGlobalna.forEach(function(element, index){
-
+// console.log(element.przeczytana)  -- sprawdzenie gdzie się znajdujemy
+element.opiszKsiazke();
+if (element.przeczytana == true){
+    n++;
+} else {}
 
 });
+console.log("Ilość książek, które zostały przeczytane: " + n);
 
 
 
