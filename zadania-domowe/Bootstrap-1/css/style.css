@@ -1,0 +1,53 @@
+.head {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+i {
+    height: 100px;
+    width: 100px;
+    padding: 20px; 
+    background-color: beige;
+    border-radius: 50%;
+    
+    color: orange;
+  font-size: 60px;
+}
+
+p, h1 {
+    color: grey;
+}
+
+
+
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+hr {
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Wykorzystując wiedzę na temat Bootstrapa stwórz sekcję strony na podstawie załączonych grafik.
+
+Na urządzeniach o rozdzielczościach powyżej 768px sekcja ma mieć trzy kolumny, w przedziale 576-768px dwie kolumny, a na urządzeniach poniżej 576px jedną kolumnę.
+
+Do stworzenia infografik wykorzystaj bibliotekę Font Awesome.
+
+W Twoim arkuszu styli nie używaj reguł @media - do zmiany wyglądu na urządzeniach mobilnych wykorzystaj wyłącznie komponenty Bootstrapa.
+
+Zadanie domowe należy oddać za pomocą GitHub Pages */
