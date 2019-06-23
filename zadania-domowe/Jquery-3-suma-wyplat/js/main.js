@@ -1,12 +1,49 @@
+$(document).ready(function(){
+let btn = $("#count-sum");
+
+
+
+//n - zwraca nam ilość parametrów, któe należy dodać
+n = $(".salary").length;
+// console.log(n);
+
+//tmp przybiera wartość konkretnego elementu
+
+let suma = 0;
+
+
+
+$("button").click(function(){
+// console.log("Guzik został kliknięty");
+for (let i= 0; i <= n; i++) {
+    tmp = $("#person"+i).find(".salary").text() *1; //PRZEKSZTAŁCAMY TEST NA LICZBĘ MNOŻĄC PRZEZ JEDEN!!!
+   suma = suma + tmp;
+   
+}
+$("#sum").text(suma);
+// console.log(suma);
+});
+
+});
+
+
+/* 
+Zaprogramuj przycisk #count-sum aby po kliknięciu pobrał wypłaty wszystkich pracowników i je zsumował.
+Uzyskany wynik wyświetl w elemencie o ID #sum.
+
+Zadanie zrób z wykorzystaniem biblioteki jQuery.
+
+Zadanie podsyłamy z użyciem https://repl.it
+
+Podpowiedzi:
+- oprogramuj zdarzenie "click" przycisku #count-sum
+- pobierz wszystkie wypłaty i za pomocą pętli je zsumuj
+- pobierz element o ID #sum i podmień mu treść na obliczoną sumę
 
 
 
 
-
-
-
-
-/* Na stronie jest blok z listą pracowników i ich wypłatami w bieżącym miesiącu:
+Na stronie jest blok z listą pracowników i ich wypłatami w bieżącym miesiącu:
 
     <div id="employees">
       <div>
@@ -42,16 +79,4 @@
       </div>
     </div>
     <button id="count-sum">Oblicz sumę wypłat</button>
-Zaprogramuj przycisk #count-sum aby po kliknięciu pobrał wypłaty wszystkich pracowników i je zsumował.
-Uzyskany wynik wyświetl w elemencie o ID #sum.
-
-Zadanie zrób z wykorzystaniem biblioteki jQuery.
-
-Zadanie podsyłamy z użyciem https://repl.it
-
-Podpowiedzi:
-- oprogramuj zdarzenie "click" przycisku #count-sum
-- pobierz wszystkie wypłaty i za pomocą pętli je zsumuj
-- pobierz element o ID #sum i podmień mu treść na obliczoną sumę
-
  */
