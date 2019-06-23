@@ -1,5 +1,5 @@
 $(document).ready(function(){
-let btn = $("#count-sum");
+
 
 
 
