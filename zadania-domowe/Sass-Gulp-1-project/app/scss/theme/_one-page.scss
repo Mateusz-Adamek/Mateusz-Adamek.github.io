@@ -20,10 +20,10 @@
 
             .icon-about {
                 color: $color-text-primary;
-                width: $base-font-size * 4.5;
-                height: $base-font-size * 4.5;
+                width: $base-font-size * 6;
+                height: $base-font-size * 6;
                 border-radius: 100%;
-                line-height: $base-font-size * 4.5;
+                line-height: $base-font-size * 6; // nasza inwencja twórcza, żeby ładnie wyglądało
                 background-color: $color-primary;
                 margin: $margin-none auto $baseline;
             }
@@ -167,7 +167,7 @@
     }
 
     #counters-services {
-    background-color: $color-background;
+    background-color: #f0f4dc;
     padding: ($baseline * 4) $padding-none $baseline;
 
         .icon-services {
@@ -236,7 +236,7 @@
 
     #team {
         padding: $baseline $padding-none;
-
+        background-color: $color-zadany;
         .container {
             margin-top: $baseline * 3;
 

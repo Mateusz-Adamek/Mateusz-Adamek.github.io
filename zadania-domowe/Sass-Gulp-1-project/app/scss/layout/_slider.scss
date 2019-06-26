@@ -8,7 +8,7 @@
 		opacity: 1;
 
 		.icon-prev, .icon-next {
-			background-color: $color-primary;
+			background-color: $color-bg-main;
 			width: $base-font-size * 2.5;
 			height: $base-font-size * 2.5;
 			font-size: $base-font-size * 2;
@@ -52,7 +52,7 @@
 		}
 
 		h1 {
-			font-size: $base-font-size + 32;
+			font-size: $base-font-size + 50;
 			margin-top: $baseline;
 			margin-bottom: $baseline;
 		}
@@ -63,8 +63,8 @@
 		}
 
 		.btn-primary {
-			margin-top: $baseline * 2;
-			font-size: $base-font-size - 2;
+			margin-top: $baseline;
+			font-size: $base-font-size + 10;
 			padding: 10px 12px;
 		}
 	}
