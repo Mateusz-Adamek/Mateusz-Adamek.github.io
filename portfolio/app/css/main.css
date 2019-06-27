@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 
 Motyw kolorystyczny strony:
-Czerienie i róże:
+Czerwienie i róże:
 #B34E49
 #F0372D
 #FF8882
@@ -26,3 +26,5 @@ font-family: 'Indie Flower', cursive;
 <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
 font-family: 'Mali', cursive;
 */
+.header-primary-mavigation {
+  background-color: #B34E49; }
