@@ -26,5 +26,64 @@ font-family: 'Indie Flower', cursive;
 <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
 font-family: 'Mali', cursive;
 */
+* {
+  font-family: 'Oswald', sans-serif; }
+
 .header-primary-mavigation {
   background-color: #B34E49; }
+
+.header-primary {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFECD6; }
+
+h2 {
+  margin-top: 5%;
+  text-align: left; }
+
+#buzia {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  background-image: url(../img/ja.png);
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#article-about {
+  text-align: left; }
+
+#footer {
+  background-color: #FF8882;
+  margin: 0;
+  padding: 1vh; }
+
+.example-group {
+  text-align: center;
+  margin-bottom: 5px; }
+
+.examples {
+  border: solid 1px #B34E49;
+  background-color: #FF8882;
+  color: #FFECD6;
+  width: 30%;
+  padding-bottom: 3%;
+  padding-top: 3%; }
+
+input, textarea, #social-media.social-link, .buttons {
+  margin-bottom: 4%;
+  resize: none; }
+
+.social-link {
+  font-size: 36px; }
+
+.buttons {
+  background-color: #FF8882;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FFECD6; }
