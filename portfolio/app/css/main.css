@@ -29,15 +29,17 @@ font-family: 'Mali', cursive;
 * {
   font-family: 'Oswald', sans-serif; }
 
-.header-primary-mavigation {
-  background-color: #B34E49; }
+html {
+  scroll-behavior: smooth; }
 
 .header-primary {
   background-image: url(../img/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #FFECD6; }
+  color: #FFECD6;
+  padding-top: 25px;
+  padding-bottom: 30px; }
 
 h2 {
   margin-top: 5%;
