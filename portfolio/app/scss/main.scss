@@ -28,12 +28,13 @@ font-family: 'Mali', cursive;
 
 * {
     font-family: 'Oswald', sans-serif;
-
+    box-sizing: border-box;
+    list-style-type: none;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 
 .header-primary {
@@ -42,9 +43,22 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     color: #FFECD6;
- 
-   padding-top: 25px;
-   padding-bottom: 30px;
+
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.navgroup {
+    font-size: 20px;
+    color: #FFECD6;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#front-end {
+    font-size: 30px;
 }
 
 h2 {
@@ -52,13 +66,13 @@ h2 {
     text-align: left;
 }
 
-#buzia {
+#avatar {
     display: inline-block;
     width: 250px;
     height: 250px;
     margin-bottom: 5%;
     margin-top: 5%;
-    background-image: url(../img/ja.png); 
+    background-image: url(../img/ja.png);
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,7 +95,8 @@ h2 {
 }
 
 .examples {
-    border: solid 1px #B34E49;
+    border: solid 1px #FFECD6;
+    border-radius: 5px;
     background-color: #FF8882;
     color: #FFECD6;
     width: 30%;
@@ -89,19 +104,68 @@ h2 {
     padding-top: 3%;
 }
 
-input, textarea, #social-media.social-link, .buttons {
+a:link {
+    text-decoration: none;
+}
+
+input,
+textarea,
+#social-media.social-link,
+.buttons {
     margin-bottom: 4%;
     resize: none;
 }
 
 .social-link {
     font-size: 36px;
+    color: #FFECD6;
+    margin-right: 10px;
 }
 
 .buttons {
+    
     background-color: #FF8882;
-   border-radius: 5px;
-padding: 10px;
-
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
     color: #FFECD6;
+    border: 0 solid;
+    text-decoration: unset;
+
+}
+
+#submit-message:hover, .buttons:hover, .examples:hover {
+    background-color: #FFECD6;
+    color: #FF8882;
+}
+
+
+.techno-icon {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 50%;
+
+    color: #FF8882;
+    font-size: 60px;
+}
+
+
+
+// TRANFROMATION OF LIST ITEMS AFTER HOOVERING
+li {
+    text-decoration: none;
+    opacity: 1;
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+}
+li:hover {
+    opacity: .7;
+    transform: scale(1.07,1.09);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
 }
