@@ -123,7 +123,7 @@ textarea,
 }
 
 .buttons {
-    
+
     background-color: #FF8882;
     border-radius: 5px;
     padding: 10px;
@@ -134,7 +134,9 @@ textarea,
 
 }
 
-#submit-message:hover, .buttons:hover, .examples:hover {
+#submit-message:hover,
+.buttons:hover,
+.examples:hover {
     background-color: #FFECD6;
     color: #FF8882;
 }
@@ -151,21 +153,66 @@ textarea,
     font-size: 60px;
 }
 
-
-
 // TRANFROMATION OF LIST ITEMS AFTER HOOVERING
 li {
     text-decoration: none;
     opacity: 1;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     transition-timing-function: ease-out;
     transition-duration: 250ms;
 }
+
 li:hover {
     opacity: .7;
-    transform: scale(1.07,1.09);
+    transform: scale(1.07, 1.09);
     transition-timing-function: ease-out;
     transition-duration: 250ms;
     position: relative;
     z-index: 99;
+}
+
+// FALLING PIXELS ANIMATION
+.fallingPixels span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    margin: 0px 70px 54px 30px;
+    // background-color: #FF8882;
+
+
+    -webkit-animation: fallingPixels 10s infinite linear;
+    -moz-animation: fallingPixels 10s infinite linear;
+}
+
+.fallingPixels span:nth-child(2) {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+
+.fallingPixels span:nth-child(1) {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+
+.fallingPixels span:nth-child(3) {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+}
+
+@-webkit-keyframes fallingPixels {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+
+    75% {
+        opacity: 1;
+        -webkit-transform: translate(100px, 600px) rotateZ(270deg);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    }
 }

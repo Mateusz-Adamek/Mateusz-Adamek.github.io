@@ -114,7 +114,9 @@ textarea,
   border: 0 solid;
   text-decoration: unset; }
 
-#submit-message:hover, .buttons:hover, .examples:hover {
+#submit-message:hover,
+.buttons:hover,
+.examples:hover {
   background-color: #FFECD6;
   color: #FF8882; }
 
@@ -141,3 +143,35 @@ li:hover {
   transition-duration: 250ms;
   position: relative;
   z-index: 99; }
+
+.fallingPixels span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  margin: 0px 70px 54px 30px;
+  -webkit-animation: fallingPixels 10s infinite linear;
+  -moz-animation: fallingPixels 10s infinite linear; }
+
+.fallingPixels span:nth-child(2) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s; }
+
+.fallingPixels span:nth-child(1) {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s; }
+
+.fallingPixels span:nth-child(3) {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s; }
+
+@-webkit-keyframes fallingPixels {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotateZ(0deg); }
+  75% {
+    opacity: 1;
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg); } }
