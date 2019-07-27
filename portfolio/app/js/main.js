@@ -33,3 +33,23 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+
+  $(".mobile-menu").on({
+    click: function(){
+
+
+       if($(this).hasClass("active")){
+
+          $(".mobile-menu").removeClass("active");
+          $("home nav").removeClass("open");
+
+       }else{
+
+          $(".mobile-menu").addClass("active");
+          $("home nav").addClass("open");
+
+       }
+
+    }
+ });

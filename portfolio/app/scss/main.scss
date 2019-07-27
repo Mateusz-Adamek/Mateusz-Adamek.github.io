@@ -53,21 +53,50 @@ html {
     display: block;
 }
 
-.menu-mobile{
+.menu-mobile {
     position: absolute;
     width: 100px;
-    height:100px;
+    height: 100px;
     right: 20px;
-   
-  
-    div{
-    border-radius: 5px;
-    width: 75%;
-    height: 7px;
-    background-color: #FFECD6;
-    margin: 15px;
+
+    &.active {
+        div:nth-child(1) {
+            top: 16px;
+            transform: rotateZ(45deg);
+        }
+
+        div:nth-child(2) {
+            display: none;
+        }
+
+        div:nth-child(3) {
+            top: 16px;
+            transform: rotateZ(-45deg);
+        }
     }
-  }
+
+    div {
+        position: absolute;
+        border-radius: 5px;
+        width: 75%;
+        height: 7px;
+        background-color: #FFECD6;
+        margin: 15px;
+        transition: all .1s linear;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            top: 18px;
+        }
+
+        &:nth-child(3) {
+            top: 36px;
+        }
+    }
+}
 
 h1 {
     font-size: 50px;
@@ -150,7 +179,7 @@ textarea,
 
 #submit-message:hover,
 .buttons:hover,
-.examples:hover{
+.examples:hover {
     background-color: #FFECD6;
     color: #FF8882;
 }

@@ -53,12 +53,28 @@ html {
   width: 100px;
   height: 100px;
   right: 20px; }
+  .menu-mobile.active div:nth-child(1) {
+    top: 16px;
+    transform: rotateZ(45deg); }
+  .menu-mobile.active div:nth-child(2) {
+    display: none; }
+  .menu-mobile.active div:nth-child(3) {
+    top: 16px;
+    transform: rotateZ(-45deg); }
   .menu-mobile div {
+    position: absolute;
     border-radius: 5px;
     width: 75%;
     height: 7px;
     background-color: #FFECD6;
-    margin: 15px; }
+    margin: 15px;
+    transition: all .1s linear; }
+    .menu-mobile div:nth-child(1) {
+      top: 0; }
+    .menu-mobile div:nth-child(2) {
+      top: 18px; }
+    .menu-mobile div:nth-child(3) {
+      top: 36px; }
 
 h1 {
   font-size: 50px; }
