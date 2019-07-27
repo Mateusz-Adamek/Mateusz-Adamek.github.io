@@ -43,7 +43,6 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     color: #FFECD6;
-
     padding-top: 25px;
     padding-bottom: 30px;
 }
@@ -51,7 +50,21 @@ html {
 .navgroup {
     font-size: 20px;
     color: #FFECD6;
+    display: block;
 }
+
+.mobile{
+    position: absolute;
+    width: 30px;
+    height:30px;
+  
+    div{
+    border-radius: 5px;
+    width: 100%;
+    height: 5px;
+    background-color: #FFECD6;
+    }
+  }
 
 h1 {
     font-size: 50px;

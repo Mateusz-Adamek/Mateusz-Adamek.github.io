@@ -45,7 +45,18 @@ html {
 
 .navgroup {
   font-size: 20px;
-  color: #FFECD6; }
+  color: #FFECD6;
+  display: block; }
+
+.mobile {
+  position: absolute;
+  width: 30px;
+  height: 30px; }
+  .mobile div {
+    border-radius: 5px;
+    width: 100%;
+    height: 5px;
+    background-color: #FFECD6; }
 
 h1 {
   font-size: 50px; }
