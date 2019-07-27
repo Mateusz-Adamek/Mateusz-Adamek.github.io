@@ -54,8 +54,11 @@ h1 {
   font-size: 30px; }
 
 h2 {
-  margin-top: 5%;
-  text-align: left; }
+  margin-top: 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
 
 #avatar {
   display: inline-block;
@@ -175,3 +178,8 @@ li:hover {
   100% {
     opacity: 0;
     -webkit-transform: translate(150px, 800px) rotateZ(360deg); } }
+
+@media (max-width: 992px) {
+  .header-primary {
+    background-image: unset;
+    background-color: #FF8882; } }
