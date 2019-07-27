@@ -38,17 +38,13 @@ $(function () {
 
     $(".menu-mobile").on({
         click: function () {
-  
            if ($(this).hasClass("active")) {
-  
               $(".menu-mobile").removeClass("active");
               $("#home .opening").hide();
            } else {
               $(".menu-mobile").addClass("active");
               $("#home .opening").show();
-  
-           }
-           
+           } 
         }
      });
 
