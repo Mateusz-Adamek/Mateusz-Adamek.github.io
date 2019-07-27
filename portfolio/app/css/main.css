@@ -48,15 +48,18 @@ html {
   color: #FFECD6;
   display: block; }
 
-.mobile {
+.menu-mobile {
   position: absolute;
-  width: 30px;
-  height: 30px; }
-  .mobile div {
+  width: 100px;
+  height: 100px;
+  right: 20px;
+  top: 20px; }
+  .menu-mobile div {
     border-radius: 5px;
-    width: 100%;
-    height: 5px;
-    background-color: #FFECD6; }
+    width: 75%;
+    height: 8px;
+    background-color: #FFECD6;
+    margin: 15px; }
 
 h1 {
   font-size: 50px; }
