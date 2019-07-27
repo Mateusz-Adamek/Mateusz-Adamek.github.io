@@ -58,6 +58,7 @@ html {
     width: 100px;
     height: 100px;
     right: 20px;
+    z-index: 2;
 
     &.active {
         div:nth-child(1) {

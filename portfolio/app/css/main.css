@@ -52,7 +52,8 @@ html {
   position: absolute;
   width: 100px;
   height: 100px;
-  right: 20px; }
+  right: 20px;
+  z-index: 2; }
   .menu-mobile.active div:nth-child(1) {
     top: 16px;
     transform: rotateZ(45deg); }
