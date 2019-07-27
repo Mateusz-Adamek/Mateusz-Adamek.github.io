@@ -78,7 +78,8 @@ h2 {
 #footer {
   background-color: #FF8882;
   margin: 0;
-  padding: 1vh; }
+  padding: 1vh;
+  color: #FFECD6; }
 
 .examples {
   padding-bottom: 20px;
@@ -102,8 +103,7 @@ textarea,
 
 .social-link {
   font-size: 36px;
-  color: #FFECD6;
-  margin-right: 10px; }
+  color: #FFECD6; }
 
 .buttons {
   background-color: #FF8882;
