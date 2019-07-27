@@ -38,11 +38,12 @@ $(function () {
 
     $(".menu-mobile").on({
         click: function () {
-
+            $(".menu-mobile").slideDown(".opening");
             if ($(this).hasClass("active")) {
 
                 $(".menu-mobile").removeClass("active");
                 $("home nav").removeClass("open");
+
 
             } else {
 
