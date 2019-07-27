@@ -42,13 +42,10 @@ $(function () {
            if ($(this).hasClass("active")) {
   
               $(".menu-mobile").removeClass("active");
-              $("#home .opening").hide("slow");
-  
-  
+              $("#home .opening").hide();
            } else {
-  
               $(".menu-mobile").addClass("active");
-              $("#home .opening").show("slow");
+              $("#home .opening").show();
   
            }
            
