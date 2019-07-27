@@ -38,21 +38,21 @@ $(function () {
 
     $(".menu-mobile").on({
         click: function () {
-            $(".menu-mobile").slideDown(".opening");
-            if ($(this).hasClass("active")) {
-
-                $(".menu-mobile").removeClass("active");
-                $("home nav").removeClass("open");
-
-
-            } else {
-
-                $(".menu-mobile").addClass("active");
-                $("home nav").addClass("open");
-
-            }
-            console.log("click");
+  
+           if ($(this).hasClass("active")) {
+  
+              $(".menu-mobile").removeClass("active");
+              $("#home .opening").slideUp("slow");
+  
+  
+           } else {
+  
+              $(".menu-mobile").addClass("active");
+              $("#home .opening").slideDown("slow");
+  
+           }
+           
         }
-    });
+     });
 
 });
