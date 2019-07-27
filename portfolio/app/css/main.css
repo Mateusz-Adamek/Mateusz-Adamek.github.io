@@ -80,18 +80,15 @@ h2 {
   margin: 0;
   padding: 1vh; }
 
-.example-group {
-  text-align: center;
-  margin-bottom: 5px;
-  border: solid 1px #FFECD6;
-  border-radius: 5px;
-  background-color: #FF8882; }
-
 .examples {
-  width: 30%;
   padding-bottom: 20px;
   padding-top: 20px;
-  color: #FFECD6; }
+  color: #FFECD6;
+  text-align: center;
+  border: solid 1px #FFECD6;
+  border-radius: 5px;
+  background-color: #FF8882;
+  display: block; }
 
 a:link {
   text-decoration: none; }
@@ -119,11 +116,8 @@ textarea,
 
 #submit-message:hover,
 .buttons:hover,
-.example-group:hover {
-  background-color: #FFECD6;
-  color: #FF8882; }
-
 .examples:hover {
+  background-color: #FFECD6;
   color: #FF8882; }
 
 .techno-icon {
